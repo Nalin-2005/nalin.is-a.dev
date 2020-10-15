@@ -67,7 +67,7 @@
 		<header class="cd-header">
 			<div class="header-wrapper">
 				<div class="logo-wrap">
-					<a href="index.html" class="hover-target animsition-link">
+					<a href="index.php" class="hover-target animsition-link">
 						<h6 class="fullscreen-image no-blur" style="font-weight: 1000;">The Guy with Glasses</h6>
 					</a>
 				</div>
@@ -85,9 +85,9 @@
 			<div class="nav__content">
 				<div class="curent-page-name-shadow">Projects</div>
 				<ul class="nav__list">
-					<li class="nav__list-item"><a href="index.html" class="hover-target animsition-link">About</a></li>
-					<li class="nav__list-item active-nav"><a href="projects.html" class="hover-target animsition-link">Projects</a></li>
-					<li class="nav__list-item"><a href="contact.html" class="hover-target animsition-link">Contact</a></li>
+					<li class="nav__list-item"><a href="index.php" class="hover-target animsition-link">About</a></li>
+					<li class="nav__list-item active-nav"><a href="projects.php" class="hover-target animsition-link">Projects</a></li>
+					<li class="nav__list-item"><a href="contact.php" class="hover-target animsition-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>	
@@ -98,17 +98,17 @@
 		<div class="section full-height over-hide swiper-container z-bigger" id="hero-slider">
 			<ul class="swiper-wrapper case-study-wrapper">
 				<li class="swiper-slide full-height case-study-name">
-					<a href="p1_notes-app.html" class="hover-target animsition-link">
+					<a href="p1_notes-app.php" class="hover-target animsition-link">
 						<h1>Notes App</h1>
 					</a>
 				</li>
 				<li class="swiper-slide full-height case-study-name">
-					<a href="p2_to-do-app.html" class="hover-target animsition-link">
+					<a href="p2_to-do-app.php" class="hover-target animsition-link">
 						<h1>To-Do App</h1>
 					</a>
 				</li>
 				<li class="swiper-slide full-height case-study-name">
-					<a href="p3_github-profiles.html" class="hover-target animsition-link">
+					<a href="p3_github-profiles.php" class="hover-target animsition-link">
 						<h1>GitHub Profiles</h1>
 					</a>
 				</li>
@@ -167,6 +167,37 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/plugins.js"></script> 
 	<script src="js/custom.js"></script>  
+	
+	<!-- Disable Right Click
+	================================================== -->
+    <script language=JavaScript>
+        var message="This function is currently unavailabe or has been disabled by the owner of this site.";
+        
+        function clickIE4() {
+            if (event.button==2) {
+                alert(message);
+                return false;
+            }
+        }
+    
+        function clickNS4(e) {
+            if (document.layers||document.getElementById&&!document.all) {
+                if (e.which==2||e.which==3) {
+                    alert(message);
+                    return false;
+                }
+            }
+        }
+    
+        if (document.layers) {
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown=clickNS4;
+        } else if (document.all&&!document.getElementById) {
+            document.onmousedown=clickIE4;
+        }
+    
+        document.oncontextmenu=new Function("alert(message);return false")
+        </script>
 <!-- End Document
 ================================================== -->
 </body>
