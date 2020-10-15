@@ -7,7 +7,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>Contact</title>
+	<title>GitHub Profiles</title>
 	<meta name="description"  content="Chinmay Mulay's Portfolio" />
 	<meta name="author" content="Chinmay Mulay">
 	<meta name="keywords"  content="website, design, html5, css3, jquery, creative, clean, animated, portfolio, multi-page" />
@@ -64,12 +64,11 @@
 		<!-- Nav and Logo
 		================================================== -->
 
-		<header class="cd-header">
+		<header class="cd-header cursor-show">
 			<div class="header-wrapper">
 				<div class="logo-wrap">
-					<a href="index.php" class="hover-target animsition-link">
+					<a href="index.html" class="hover-target animsition-link">
 						<h6 class="fullscreen-image no-blur" style="font-weight: 1000;">The Guy with Glasses</h6>
-					</a>
 				</div>
 				<div class="nav-but-wrap">
 					<div class="menu-icon hover-target">
@@ -83,29 +82,25 @@
 
 		<div class="nav">
 			<div class="nav__content">
-				<div class="curent-page-name-shadow">Contact</div>
+				<div class="curent-page-name-shadow">Projects</div>
 				<ul class="nav__list">
-					<li class="nav__list-item"><a href="index.php" class="hover-target animsition-link">About</a></li>
-					<li class="nav__list-item "><a href="projects.php" class="hover-target animsition-link">Projects</a></li>
-					<li class="nav__list-item active-nav"><a href="contact.php" class="hover-target animsition-link">Contact</a></li>
+					<li class="nav__list-item"><a href="index.html" class="hover-target animsition-link">About</a></li>
+					<li class="nav__list-item active-nav"><a href="projects.html" class="hover-target animsition-link">Projects</a></li>
+					<li class="nav__list-item"><a href="contact.html" class="hover-target animsition-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>	
 
-
 		<!-- Primary Page Layout
 		================================================== -->	
 
-		<div class="shadow-title parallax-top-shadow">Hola</div>
+		<div class="shadow-title parallax-top-shadow">Github Profiles</div>
 		
 		<div class="section padding-page-top padding-bottom over-hide z-bigger">
 			<div class="container z-bigger">
 				<div class="row page-title px-5 px-xl-2">
 					<div class="col-12 parallax-fade-top">
-						<h1>Say Hello</h1>
-					</div>
-					<div class="offset-1 col-11 parallax-fade-top mt-2 mt-sm-3">
-						<p>get in touch</p>
+						<h1>Browse - GitHub Profiles</h1>
 					</div>
 				</div>
 			</div>
@@ -113,47 +108,53 @@
 
 		<div class="section padding-bottom-big over-hide z-bigger">
 			<div class="container">
-				<div class="row px-5 px-xl-2">
-					<div class="col-lg-12">
-						<div class="row ajax-form">
-							<div class="col-md-6">
-								<input class="hover-target" name="name" type="text" placeholder="Your Name: *" autocomplete="off"/>
-							</div>	
-							<div class="col-md-6 mt-4 mt-md-0">
-								<input class="hover-target" name="email" type="email" placeholder="E-Mail: *" autocomplete="off"/>
-							</div>	
-							<div class="col-md-6 mt-4">
-								<input class="hover-target" name="phone" type="tel" placeholder="Phone Number:" autocomplete="off"/>
-							</div>	
-							<div class="col-md-6 mt-4">
-								<input class="hover-target" name="location" type="text" placeholder="City, Country:" autocomplete="off"/>
-							</div>
-							<div class="col-md-12 mt-4">
-								<textarea class="hover-target" name="message" placeholder="Message *"></textarea>
-							</div>
-							<div class="col-md-12 mt-4">
-								<center>
-									<button class="hover-target" id="send" data-lang="en"><span>submit</span></button>
-								</center>
-							</div>
+				<div class="row px-5 px-xl-2 justify-content-center">
+					<div class="col-lg-8 mb-5 text-center">
+						<p class="mb-0 pb-0 lead">Github Profiles is a platform that displays GitHub profiles with modern material card design it using GitHub API with following features.</p>
+					</div>
+					<div class="col-lg-12 mb-5 text-center">
+						<h5 class="mb-3" style="font-weight: bold; font-size: x-large"><u>Features</u></h5>
+					</div>
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3">Search any GitHub profile by their username.</h5>	
+					</div>
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3">Displays User Information</h5>
+					</div>
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3">Displays User Profile Image.</h5>	
+					</div>
+
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3">Displays User Bio.</h5>	
+						<p class="mb-0 pb-0"> If Bio is not kept, null will be returned.</p>	
+					</div>
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3">Displays Followers, Following and Number of Repository.</h5>	
+						<p>One can directly visit the repo from the user's profile simply by clicking on the repo name.</p>
+					</div>
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3">Repositories are ordered alphabetically.</h5>
+					</div>
+					<div class="col-lg-12 mb-5 text-center">
+						<h5 class="mb-3" style="font-weight: bold; font-size: x-large;"><u>Project Studio</u></h5>
+						<div class="img-wrap">
+							<img src="img/projects/github-profiles/gh-pro.png" alt="To-Do Screenshot">
 						</div>	
 					</div>
-				</div>		
-			</div>				
-		</div>
-
-		<div class="section padding-top-bottom over-hide z-bigger background-dark-3 footer">
-			<div class="shadow-on-footer" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.1s">codewithchin@gmail.com</div>
-			<div class="container" data-scroll-reveal="enter bottom move 20px over 0.5s after 0.4s">
-				<div class="row">
-					<div class="col-12 text-center z-bigger py-5">
-						<div class="footer-lines">
-							<a href="mailto:codewithchin@gmail.com" class="hover-target"><h4>Email Me</h4></a>
-						</div>
+					
+					<div class="col-lg-10 mb-5 text-center">
+						<p class="mb-0 pb-0 lead">This project is closed.<br/> This project is not licensed sa it uses GitHub API.</p>
 					</div>
-				</div>
-			</div>		
-		</div>	
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3"><a href="https://github.com/cmulay/github-profiles.git">Visit Project Repo</a></h5>
+					</div>
+					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h5 class="mb-3"><a href="https://cmulay-githubprofiles.netlify.app/">Preview Project</a></h5>
+					</div>
+				</div>		
+			</div>			
+		</div>
 		
 		<!-- Social links
 		================================================== -->

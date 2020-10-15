@@ -7,7 +7,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>Notes App</title>
+	<title>Projects</title>
 	<meta name="description"  content="Chinmay Mulay's Portfolio" />
 	<meta name="author" content="Chinmay Mulay">
 	<meta name="keywords"  content="website, design, html5, css3, jquery, creative, clean, animated, portfolio, multi-page" />
@@ -54,7 +54,7 @@
 	
 	
 </head>
-<body>
+<body class="over-hide">
 
 	<!-- Page preloader wrap
 	================================================== -->
@@ -64,11 +64,12 @@
 		<!-- Nav and Logo
 		================================================== -->
 
-		<header class="cd-header cursor-show">
+		<header class="cd-header">
 			<div class="header-wrapper">
 				<div class="logo-wrap">
-					<a href="index.php" class="hover-target animsition-link">
+					<a href="index.html" class="hover-target animsition-link">
 						<h6 class="fullscreen-image no-blur" style="font-weight: 1000;">The Guy with Glasses</h6>
+					</a>
 				</div>
 				<div class="nav-but-wrap">
 					<div class="menu-icon hover-target">
@@ -84,102 +85,60 @@
 			<div class="nav__content">
 				<div class="curent-page-name-shadow">Projects</div>
 				<ul class="nav__list">
-					<li class="nav__list-item"><a href="index.php" class="hover-target animsition-link">About</a></li>
-					<li class="nav__list-item active-nav"><a href="projects.php" class="hover-target animsition-link">Projects</a></li>
-					<li class="nav__list-item"><a href="contact.php" class="hover-target animsition-link">Contact</a></li>
+					<li class="nav__list-item"><a href="index.html" class="hover-target animsition-link">About</a></li>
+					<li class="nav__list-item active-nav"><a href="projects.html" class="hover-target animsition-link">Projects</a></li>
+					<li class="nav__list-item"><a href="contact.html" class="hover-target animsition-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>	
 
 		<!-- Primary Page Layout
-		================================================== -->	
-
-		<div class="shadow-title parallax-top-shadow">Notes-App</div>
+		================================================== -->
 		
-		<div class="section padding-page-top padding-bottom over-hide z-bigger">
-			<div class="container z-bigger">
-				<div class="row page-title px-5 px-xl-2">
-					<div class="col-12 parallax-fade-top">
-						<h1>Nota - The Note Taking App</h1>
-					</div>
-				</div>
-			</div>
+		<div class="section full-height over-hide swiper-container z-bigger" id="hero-slider">
+			<ul class="swiper-wrapper case-study-wrapper">
+				<li class="swiper-slide full-height case-study-name">
+					<a href="p1_notes-app.html" class="hover-target animsition-link">
+						<h1>Notes App</h1>
+					</a>
+				</li>
+				<li class="swiper-slide full-height case-study-name">
+					<a href="p2_to-do-app.html" class="hover-target animsition-link">
+						<h1>To-Do App</h1>
+					</a>
+				</li>
+				<li class="swiper-slide full-height case-study-name">
+					<a href="p3_github-profiles.html" class="hover-target animsition-link">
+						<h1>GitHub Profiles</h1>
+					</a>
+				</li>
+			</ul>
+			
+			<!-- Background Images -->
+			<div class="swiper-scrollbar"></div>
 		</div>
-
-		<div class="section padding-bottom-big over-hide z-bigger">
-			<div class="container">
-				<div class="row px-5 px-xl-2 justify-content-center">
-					<div class="col-lg-8 mb-5 text-center">
-						<p class="mb-0 pb-0 lead">Nota is a simple and clean note taking app which gives you materially designed minimal note taking experience which helps you to stay focused.</p>
-					</div>
-					<div class="col-lg-12 mb-5 text-center">
-						<h5 class="mb-3" style="font-weight: bold; font-size: x-large"><u>Features</u></h5>
-					</div>
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Note Space</h5>
-						<p class="mb-0 pb-0">Keeps all your notes at one place, makes it available right when you need them.</p>	
-					</div>
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Data and Security</h5>
-						<p class="mb-0 pb-0">Notes [Notes Data] are saved on your Local Machine.</p>	
-					</div>
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">100% Secure</h5>
-						<p class="mb-0 pb-0"> Your thoughts truely yours (No Cloud Connectivity)</p>	
-					</div>
-
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Search Notes</h5>	
-						<p class="mb-0 pb-0"> Search by note title or by any word noted on any note</p>	
-					</div>
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Sort Notes</h5>
-						<p class="mb-0 pb-0">Notes can be sorted by Alphabetically, Last Edited, or Recently Drafted</p>	
-					</div>
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3">Delete Note</h5>	
-						<p class="mb-0 pb-0"> Deletes permanently.</p>	
-					</div>
-					<div class="col-lg-12 mb-5 text-center">
-						<h5 class="mb-3" style="font-weight: bold; font-size: x-large;"><u>Project Studio</u></h5>
-					</div>
-					<div class="col-md-6 mb-5" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<div class="img-wrap">
-							<img src="img/projects/notes_app/web_home.png" alt="">
-						</div>	
-					</div>	
-					<div class="col-md-6 mb-5" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<div class="img-wrap">
-							<img src="img/projects/notes_app/web_note.png" alt="">
-						</div>	
-					</div>
-					
-					<div class="col-lg-10 mb-5 text-center">
-						<p class="mb-0 pb-0 lead">This project is still under development and will improve it's functionality and scale over time. Currently, working on and focused at UI improvements and mobile optimisation, this project uses <a href="https://www.npmjs.com/package/uuid">one</a> third party library. <br/> This project is <a href="https://github.com/cmulay/Notes-App/blob/master/LICENSE"> licensed </a>under MIT.</p>
-					</div>
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3"><a href="https://github.com/cmulay/Notes-App.git">Visit Project Repo</a></h5>
-					</div>
-					<div class="col-md-4 mb-5 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<h5 class="mb-3"><a href="https://cmulay-notesapp.netlify.app/">Preview Project</a></h5>
-					</div>
-				</div>		
-			</div>			
-		</div>
-
 		
-		<div class="section padding-top-bottom over-hide z-bigger background-dark-3 footer">
-			<div class="shadow-on-footer" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.1s">To-Do App</div>
-			<div class="container" data-scroll-reveal="enter bottom move 20px over 0.5s after 0.4s">
-				<div class="row">
-					<div class="col-12 text-center z-bigger py-5">
-						<div class="footer-lines">
-							<a href="p2_to-do-app.php" class="hover-target animsition-link"><h4>Next Project</h4></a>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>	
+		<!-- Slider background images
+		================================================== -->
+		
+		<ul class="case-study-images">
+			<li>
+				<div class="img-hero-background no-blur"></div> 
+				<h2 class="fullscreen-image no-blur">Notes App</h2>
+				<div class="hero-number">01</div> 
+				<div class="hero-number-fixed">03</div> 
+			</li>
+			<li>
+				<div class="img-hero-background no-blur"></div> 
+				<h2 class="fullscreen-image no-blur">To-Do App</h2>
+				<div class="hero-number">02</div> 
+			</li>
+			<li>
+				<div class="img-hero-background no-blur"></div> 
+				<h2 class="fullscreen-image no-blur">GitHub Profiles</h2>
+				<div class="hero-number">03</div> 
+			</li>
+		</ul>
 		
 		<!-- Social links
 		================================================== -->
@@ -190,15 +149,14 @@
 		<div class="copyr">
 			2020 © <a href="https://github.com/cmulay" class="hover-target">Chinmay Mulay</a>
 		</div>
-		<div class="scroll-to-top hover-target"></div>
 		
 		<!-- Page cursor
 		================================================== -->
 		
         <div class='cursor' id="cursor"></div>
         <div class='cursor2' id="cursor2"></div>
-        <div class='cursor3' id="cursor3"></div>		
-		
+        <div class='cursor3' id="cursor3"></div>
+
 	</div>
 
 	
