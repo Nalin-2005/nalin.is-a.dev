@@ -54,7 +54,7 @@
 	
 	
 </head>
-<body>
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
 
 	<!-- Page preloader wrap
 	================================================== -->
@@ -200,7 +200,6 @@
         <div class='cursor3' id="cursor3"></div>		
 		
 	</div>
-
 	
 	<!-- JAVASCRIPT
     ================================================== -->
@@ -210,36 +209,6 @@
 	<script src="js/plugins.js"></script> 
 	<script src="js/custom.js"></script>  
 	
-	<!-- Disable Right Click
-	================================================== -->
-    <script language=JavaScript>
-        var message="This function is currently unavailabe or has been disabled by the owner of this site.";
-        
-        function clickIE4() {
-            if (event.button==2) {
-                alert(message);
-                return false;
-            }
-        }
-    
-        function clickNS4(e) {
-            if (document.layers||document.getElementById&&!document.all) {
-                if (e.which==2||e.which==3) {
-                    alert(message);
-                    return false;
-                }
-            }
-        }
-    
-        if (document.layers) {
-            document.captureEvents(Event.MOUSEDOWN);
-            document.onmousedown=clickNS4;
-        } else if (document.all&&!document.getElementById) {
-            document.onmousedown=clickIE4;
-        }
-    
-        document.oncontextmenu=new Function("alert(message);return false")
-        </script>
 <!-- End Document
 ================================================== -->
 </body>
