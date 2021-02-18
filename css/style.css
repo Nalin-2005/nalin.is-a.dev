@@ -831,7 +831,6 @@ body.nav-active .cd-header.is-fixed {
 body.nav-active .cd-header.is-visible {}
 
 body.nav-active .menu-icon__line {
-    background-color: #fff;
     -webkit-transform: translate(0px, 0px) rotate(-45deg);
     transform: translate(0px, 0px) rotate(-45deg);
 }
